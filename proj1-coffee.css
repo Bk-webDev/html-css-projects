@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/*variables*/
+:root {
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+
+/*utility styles*/
+button {
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+
+/*Resets*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #100e0f;
+  max-width: 100%;
+}
+
+/*Nav starts*/
+nav {
+  background-color: #100e0f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 10px 5px;
+  box-shadow: 2px 2px 20px #fff;
+  margin-bottom: 0.3rem;
+  position: fixed;
+  z-index: 999;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+li a:hover {
+  border-bottom: 3px solid vacolorr(--main-);
+  background-color: rgba(153, 236, 30, 0.851);
+}
+
+span {
+  color: rgb(215, 31, 21);
+}
+
+/*Nav ends*/
+
+/*header starts*/
+.header {
+  background: url(coffee/cup.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: serif;
+  font-weight: normal;
+
+  /*flexbox*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #f9f9ff;
+  padding-bottom: 10px;
+}
+
+.main-heading {
+  position: absolute;
+  top: 5rem;
+  font-size: 3rem;
+  word-spacing: 10px;
+}
+
+.primary-heading {
+  position: absolute;
+  bottom: 6rem;
+  font-size: 3rem;
+  margin-bottom: -12px;
+  word-spacing: 10px;
+}
+
+.logo-on-cup {
+  position: absolute;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem 2rem;
+  margin-bottom: 5rem;
+  word-spacing: 1rem;
+  color: rgba(4, 88, 4, 0.723);
+}
+
+.logo-on-cup span {
+  color: rgba(8, 88, 152, 0.834);
+}
+
+.main-btn {
+  position: absolute;
+  bottom: 4rem;
+  padding: 5px 50px;
+  background: transparent;
+  background-color: var(--main-color);
+  transform: translateY(35px);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/*header ends*/
+
+/*our story starts*/
+#our-story {
+  height: 100vh;
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  background: url(images/coffee/number2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-style {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: serif;
+  font-size: 4rem;
+  color: #fff;
+  transform: translateX(-100px);
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-120px);
+}
+
+.section-content p {
+  width: 500px;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+/*our story ends*/
+
+/*coffee container starts*/
+.coffee-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.img-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.content-section p {
+  max-width: 500px;
+  color: #fff;
+}
+
+.title-two {
+  font-size: 3rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.products {
+  margin-top: 5rem;
+}
+
+.title-three {
+  font-size: 4rem;
+  margin: 10rem 0 10rem 10rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+}
+
+.card-img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -60px;
+}
+
+.img-one {
+  background: url("images/coffee/img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img-two {
+  background: url("images/coffee/img2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img-three {
+  background: url("images/coffee/img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.card .items p {
+  color: #fff;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+/*coffee container ends*/
+
+/*footer starts*/
+footer {
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.footer-columns {
+  width: 30%;
+  margin-left: 1.5rem;
+}
+
+.footer-columns h2 {
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
+.footer-columns p {
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+footer .subscribe {
+  margin: 0.5rem;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe input {
+  padding: 0 20px;
+  border: 2px solid rgb(22, 234, 22);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.subscribe a {
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 2px;
+  font-weight: bold;
+  background-color: #f00;
+  color: #f9f9ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe a:hover {
+  background-color: #f44;
+  color: #100e0f;
+}
+a.subscribe-button {
+  padding: 10px 20px;
+  margin-left: 1.5rem;
+}
+
+.copy-right {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
+
+.copy-right p {
+  color: #f9f9ff;
+  font-size: 1.2rem;
+}
+
+.pro-links {
+  margin: 0 10rem;
+  font-size: 2rem;
+}
+
+.pro-links a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #0909e6;
+  transition: all 0.3s;
+}
+
+.pro-links a:hover {
+  color: #4444d5e2;
+  font-size: 2.02rem;
+}
+
+/*Project End! */
+
+/*Responsiveness*/
+@media only screen and (max-width: 768px) {
+  .main-heading,
+  .primary-heading {
+    font-size: 2.2rem;
+  }
+
+  .logo-on-cup span {
+    color: #f00;
+  }
+
+  .logo-on-cup {
+    font-size: 2rem;
+    color: #0909e6;
+  }
+
+  #our-story {
+    text-align: center;
+  }
+
+  #our-story .title {
+    transform: translateX(50px);
+    font-size: 3.2rem;
+  }
+
+  #our-story .line {
+    display: none;
+  }
+
+  #our-story .img-container .img {
+    width: 37rem;
+    height: 27rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .content-section {
+    text-align: center;
+  }
+  .content-section p {
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
+
+  .coffee-container .image-container {
+    margin-top: 3.5rem;
+    width: 50%;
+  }
+
+  .title-two {
+    border: 2px solid #0909e6;
+    padding: 0 2rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
+  }
+
+  .products {
+    margin-top: 2rem;
+  }
+
+  .title-three {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .subscribe a {
+    margin: 10px 3rem;
+  }
+  .subscribe input {
+    padding: 8px 20px;
+  }
+}
