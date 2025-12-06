@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* variable */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --seconday-font: "Playfair Display", serif;
+  --main-color: #37132d;
+  --text-color: #f9f9f9;
+}
+
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* nav starts */
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(143, 181, 181);
+  line-height: 60px;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 2px 2px 10px var(--main-color);
+}
+ul li {
+  margin-left: 3rem;
+  display: inline;
+}
+ul li a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+ul li a.active,
+ul li a:hover {
+  border-bottom: 5px solid rgb(5, 5, 197);
+  color: black;
+}
+/* nav ends */
+
+/* section one starts*/
+.content__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.header__container {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+.header__heading {
+  font-size: 4rem;
+  font-family: var(--main-font);
+}
+.header__sub-heading {
+  width: 70%;
+  font-family: var(--seconday-font);
+  margin: 20px 0;
+  color: rgb(82, 82, 82);
+  line-height: 25px;
+}
+.header__img-container {
+  margin-top: 8rem;
+  width: 30%;
+  height: 50vh;
+  position: relative;
+}
+.header-img {
+  width: 200px;
+  height: 300px;
+}
+.img-one {
+  position: absolute;
+  left: 10rem;
+}
+.img-two {
+  position: absolute;
+  left: 3rem;
+  top: 7rem;
+}
+.main-btn {
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: var(--text-color);
+  font-family: var(--main-font);
+  transition: all 0.3s ease-out;
+}
+.main-btn:hover {
+  background: rgba(230, 17, 17, 0.915);
+}
+/* section one ends*/
+
+/* experience section starts */
+.experience {
+  height: 90vh;
+  margin-left: 5rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.experience-img {
+  background: url(images/pro-barber.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+  margin-left: 5rem;
+}
+.gray-heading {
+  color: gray;
+  font-family: var(--main-font);
+}
+.btn-container {
+  margin-top: 30px;
+}
+/* experience section ends */
+
+/* social media section starts */
+.social-media {
+  margin: 5rem;
+}
+.sm-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.follow {
+  background: var(--main-color);
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-family: var(--seconday-font);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 3rem;
+}
+/* social media section ends */
+
+/* hero section starts */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img-container {
+  background: url(images/b6.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 450px;
+}
+.hero__sub-heading {
+  width: 400px;
+}
+.hero-content {
+  margin-left: 6rem;
+}
+/* hero section ends */
+
+/* services section starts */
+.services {
+  margin-top: 10rem;
+}
+.services-g-heading {
+  margin-left: 5rem;
+  margin-bottom: 10px;
+}
+.services-heading {
+  margin-left: 5rem;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 1px 1px 5px 1px rgb(154, 131, 131);
+  position: relative;
+  padding: 10px 30px;
+  width: 300px;
+  height: 450px;
+  margin: 1.5rem;
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: top;
+}
+.img-one {
+  background-image: url("images/b3.jpg");
+}
+.img-two {
+  background-image: url("images/b5.jpg");
+}
+.img-three {
+  background-image: url("images/b1.jpg");
+}
+.card-content {
+  transform: translateY(200px);
+  text-align: center;
+  margin-top: 10px;
+}
+.card-title {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: normal;
+}
+.card-info {
+  font-family: var(--seconday-font);
+  font-weight: normal;
+  color: rgb(109, 109, 109);
+  text-align: center;
+  margin: 20px 40px;
+}
+/* services section ends */
+
+/* footer starts */
+.footer {
+  height: 50vh;
+  margin-top: 5rem;
+  background: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+}
+.footer__card-title {
+  font-family: var(--main-font);
+  margin: 10px 0;
+}
+.footer__card-info {
+  font-family: var(--seconday-font);
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+/* footer ends */
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#b721ff, #21d4fd);
+  border-radius: 100px;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .header__heading {
+    font-size: 2.5rem;
+  }
+  .experience {
+    margin-top: 18rem;
+  }
+  .experience-img {
+    height: 320px;
+    margin-right: 10rem;
+    margin-top: 1rem;
+  }
+  .sm-container {
+    transform: translateY(30px);
+  }
+  .follow {
+    margin-right: 1rem;
+    padding: 10px 10px;
+  }
+
+  .hero-container {
+    width: 100%;
+  }
+  .hero-img-container {
+    height: 350px;
+    margin-bottom: 1rem;
+  }
+  .hero-content {
+    margin-left: 2rem;
+  }
+  .hero__sub-heading {
+    width: 600px;
+  }
+  .services {
+    margin-top: 4rem;
+  }
+  .footer__card-title {
+    font-size: 1.6rem;
+  }
+}
